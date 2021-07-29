@@ -11,10 +11,10 @@ Commands to install the packages
    🦖 npm i express
    
 3. To install nodemon to watch code as soon as the changes is done
-   npm i -g nodemon
+   🦖 npm i -g nodemon
    
 4. To install the swagger doc and swagger ui express
-   npm i swagger-jsdoc swagger-ui-express
+   🦖 npm i swagger-jsdoc swagger-ui-express
    
 5. To run the app using nodemon
-   nodemon -L app.js
+   🦖 nodemon -L app.js
