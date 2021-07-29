@@ -5,7 +5,7 @@ Autogernation of Swagger Documentation with NodeJs and express
 Commands to install the packages
 
 1. To install the package.json with default values by using '-y'
-   npm init -y
+   🦖 npm init -y
    
 2. To install express js framework 
    npm i express
