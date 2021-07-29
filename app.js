@@ -3,7 +3,7 @@ const app = express();
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 // Extended: https://swagger.io/specification/#infoobject
 const swaggerOptions = {
@@ -36,7 +36,20 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
  */
 
 app.get('/students', (req, res) => {
-  res.send('customer results');
+  res.send('students results');
+});
+
+/**
+ * @swagger
+ * /students:
+ *  post:
+ *    description: Update student information
+ *    responses:
+ *       '200':
+ *          description: A succesfull response
+ */
+app.post('/students', (req, res) => {
+  res.send('succesfully updated student information');
 });
 
 /**
@@ -49,6 +62,32 @@ app.get('/students', (req, res) => {
  *          description: A succesfull response
  */
 app.put('/students', (req, res) => {
+  res.send('succesfully updated student information');
+});
+
+/**
+ * @swagger
+ * /students:
+ *  delete:
+ *    description: Delete student information
+ *    responses:
+ *       '200':
+ *          description: A succesfull response
+ */
+app.delete('/students', (req, res) => {
+  res.send('succesfully updated student information');
+});
+
+/**
+ * @swagger
+ * /students/:id:
+ *  delete:
+ *    description: Delete student information by student id
+ *    responses:
+ *       '200':
+ *          description: A succesfull response
+ */
+app.delete('/students/:id', (req, res) => {
   res.send('succesfully updated student information');
 });
 
