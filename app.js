@@ -14,7 +14,7 @@ const swaggerOptions = {
       contact: {
         name: 'Manish Landge',
       },
-      servers: ['http://localhost:5000'],
+      servers: ['http://localhost:5001'],
     },
   },
   apis: ['app.js'],
