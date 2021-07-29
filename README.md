@@ -8,7 +8,7 @@ Commands to install the packages
    🦖 npm init -y
    
 2. To install express js framework 
-   npm i express
+   🦖 npm i express
    
 3. To install nodemon to watch code as soon as the changes is done
    npm i -g nodemon
